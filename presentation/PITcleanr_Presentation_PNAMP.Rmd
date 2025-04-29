@@ -3,20 +3,8 @@ title: "Wrangling and Preparing PIT Tag Data using PITcleanr"
 author: Kevin See
 institute: "WDFW <br/> Department of Fish Science <br/>"
 date: "May 8, 2025"
-# output:
-#   xaringan::moon_reader:
-#     css: [default, default-fonts, "ninjutsu", "css/my-theme.css"]
-#     # seal: false
-#     nature:
-#       titleSlideClass: ["left", "middle", "my-title", "inverse"]
-#       highlightStyle: github
-#       highlightLines: true
-#       countIncrementalSlides: false
-#       # ratio: '16:9'
 output:
   xaringan::moon_reader:
-    # css: ["default", "custom.css"]
-    # css: [default, rladies]
     css: ["default", "metropolis-fonts", "pnamp_custom.css"]
     # lib_dir: libs
     nature:
