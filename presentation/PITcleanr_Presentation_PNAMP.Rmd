@@ -72,7 +72,7 @@ background-image: url('images/PITarray_flow.jpg')
 background-size: cover
 
 ???
-Considered a "site"
+Example of a "site"
 
 6 different antennas
 
@@ -97,7 +97,7 @@ Information about individual fish
 
 <center>
 ```{r, echo = F, out.width='80%'}
-include_graphics(here("rmd",
+include_graphics(here("presentation",
                       "images",
                       "BiomarkFeatureSalmon.jpg"), dpi = NA)
 ```
@@ -116,7 +116,7 @@ include_graphics(here("rmd",
 
 <center>
 ```{r array-flow, echo = F, out.width='80%'}
-include_graphics(here("rmd",
+include_graphics(here("presentation",
                       "images",
                       "PITarray_flow.jpg"), dpi = NA)
 ```
@@ -187,7 +187,7 @@ observations |>
 class: center, middle
 
 ```{r snake-map, echo = F, out.width="60%"}
-include_graphics(here("rmd",
+include_graphics(here("presentation",
                       "images",
                       "snake_site_map.png"), dpi = NA)
 ```
@@ -209,7 +209,7 @@ class: inverse, center, middle
 ## Make your life easier
 
 .pull-left[
-* Uses `r include_graphics(here("rmd", "images", "Rlogo.png"), dpi = 2500)`
+* Uses `r include_graphics(here("presentation", "images", "Rlogo.png"), dpi = 2500)`
 
 * Query some data from PTAGIS
   * Metadata about sites
@@ -233,6 +233,9 @@ class: inverse, center, middle
 
 * Build capture history matrix
 ]
+
+???
+You may not need all this functionality for every analysis
 
 ---
 
@@ -311,7 +314,7 @@ cth_file_nm <-
 
 .pull-right[
 ```{r, echo = F, out.width='70%'}
-include_graphics(here("rmd",
+include_graphics(here("presentation",
                       "images",
                       paste0(root_site, '_site_map.png')), dpi = NA)
 ```
@@ -329,7 +332,7 @@ Download complete tag histories from PTAGIS as csv file
 
 <center>
 ```{r, echo = F, out.width='65%'}
-include_graphics(here("rmd",
+include_graphics(here("presentation",
                       "images",
                       "ptagis_query.png"), 
                  dpi = NA)
@@ -377,6 +380,9 @@ cth_df <-
   * Raw .log, .xlsx, or .txt files
 * Change `file_type`
 
+???
+Note yellow highlighting indicates `PITcleanr` functions
+
 ---
 
 # Compress data
@@ -423,7 +429,7 @@ comp_obs |>
 .large[
 1. Shrink size of data
 
-1. Assign observations to node of your choice
+1. Assign (or map) observations to node of your choice
 
 1. First, last and number of detections on each node
 
@@ -437,6 +443,9 @@ comp_obs |>
 class: inverse, center, middle
 
 # Configuration File
+
+???
+How to build that map
 
 ---
 
@@ -482,6 +491,9 @@ my_config |>
                   paging = FALSE))
 ```
 ]
+
+???
+Config ID is because sites can change configuration over time
 
 ---
 
@@ -529,7 +541,7 @@ system.file("extdata",
 
 .pull-right[
 ```{r, echo = F, out.width='70%'}
-include_graphics(here("rmd",
+include_graphics(here("presentation",
                       "images",
                       paste0(root_site, '_site_map.png')), dpi = NA)
 ```
@@ -541,9 +553,9 @@ include_graphics(here("rmd",
 
 .pull-left[
 
-* Moving upstream, tags move from parent sites to child sites
+* Tags move from parent sites to child sites
 
-* Details which sites are upstream of a particular site
+* Default is to tell which sites are upstream of a particular site
 
 * Can be reversed for downstream movement
 
@@ -906,7 +918,7 @@ class: inverse, center, middle
 
 <center>
 ```{r, echo = F, out.width='75%'}
-include_graphics(here("rmd",
+include_graphics(here("presentation",
                       "images",
                       "website_screenshot.png"), dpi = NA)
 ```
@@ -921,7 +933,7 @@ include_graphics(here("rmd",
 
 <center>
 ```{r, echo = F, out.width='75%'}
-include_graphics(here("rmd",
+include_graphics(here("presentation",
                       "images",
                       "vignettes_screenshot.png"), dpi = NA)
 ```
