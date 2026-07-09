@@ -397,7 +397,7 @@ Start with:
 * `r prettyNum(n_distinct(cth_df$event_site_code_value), big.mark = ",")` different sites. 
 
 ```{r}
-comp_obs <- compress(cth_df)
+comp_obs <- compress(cth_df)   #<<
 ```
 
 End with `r prettyNum(nrow(comp_obs), big.mark = ",")` rows of data. 
@@ -421,6 +421,12 @@ comp_obs |>
                   paging = FALSE))
 ```
 ]
+
+???
+
+Duration and Travel Time are in minutes
+
+Add up N Dets = # rows in original data
 
 ---
 
@@ -841,7 +847,7 @@ Start by building a description of how each node is connected to others
 
 ```{r}
 node_order <-
-  buildNodeOrder(parent_child)
+  buildNodeOrder(parent_child)   #<<
 
 node_order
 ```
@@ -924,7 +930,6 @@ include_graphics(here("presentation",
 ```
 </center>
 
-
 ---
 
 # Package Website
@@ -932,7 +937,7 @@ include_graphics(here("presentation",
 * https://kevinsee.github.io/PITcleanr/
 
 <center>
-```{r, echo = F, out.width='75%'}
+```{r, echo = F, out.width='40%'}
 include_graphics(here("presentation",
                       "images",
                       "vignettes_screenshot.png"), dpi = NA)
